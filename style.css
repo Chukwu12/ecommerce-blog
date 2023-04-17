@@ -1,0 +1,83 @@
+/* Fonts: - Monsterrat: 400, 500, 600 -Prata: 400 */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Prata&display=swap");
+
+:root {
+  /* Colors */
+  --primary-color: #fa4eab;
+  --light-color: #fff2f9;
+  --dark-color: #323232;
+  --hot-pink: #fa4eab;
+  --pink-color: #fe83c6;
+  --white-color: #ffffff;
+  --gray-color: #687080;
+
+  /* Fonts */
+  --primary-font: "Monstserrat", sans-serif;
+  --second-font: "Prata", serif;
+  --fs14: 14px;
+  --fw600: 600;
+
+  /* Transitions */
+  --transition-color: color 0.3s;
+  --transition-background: background-color 0.3s;
+  --transition-border: border 0.3s;
+  --transition-transform: transform 0.3s;
+  --shadow: 0px 10px 20px 0px rgb(0 0 0 / 20%);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--dark-color);
+  background-color: var(--white-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--second-font);
+  font-weight: 400;
+  line-height: normal;
+}
+
+h1 {
+  font-size: 2.27rem;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1em;
+}
+
+/* Reused Style */
+
+.container {
+  max-width: var(--mx-width, 1200px);
+  padding: 0 var(--gutter, 15px);
+  margin: 0 auto;
+}
+
+/* Header */
